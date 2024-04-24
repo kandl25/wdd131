@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kdam Thmor');
 
 .container {
-    display: grid;
+    display: flex;
     grid-template: auto 1fr auto / auto 1fr auto;
 }
 body {
@@ -17,16 +17,16 @@ header {
     grid-column: 1 / 4;
     font-family: "Kdam Thmor", serif;
     font-size: 32px;}
-p {
+main-content {
     grid-column: 2 / 3;
     text-align: left;
     color: #C9ADA7;
     font-family: serif, "Hanuman";
 }
-h2 {
+left-side {
     grid-column: 1 / 2;
 }
-h3 {
+right-side {
     grid-column: 3 / 4;
 }
 footer {
