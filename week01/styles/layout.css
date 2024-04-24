@@ -1,0 +1,34 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Hanuman');
+@import url('https://fonts.googleapis.com/css?family=Kdam Thmor');
+
+.container {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+body {
+    padding: 0;
+    background-color: #9A8C98;
+    font-size: 18px;
+    margin: 0;
+}
+h1 {
+    padding: 2rem;
+    grid-column: 1 / 4;
+    font-family: "Kdam Thmor", serif;
+    font-size: 32px;}
+p {
+    grid-column: 2 / 3;
+    text-align: left;
+    color: #C9ADA7;
+    font-family: serif, "Hanuman";
+}
+left {
+    grid-column: 1 / 2;
+}
+right {
+    grid-column: 3 / 4;
+}
+footer {
+    grid-column: 1 / 4'
+}
