@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Hanuman');
 @import url('https://fonts.googleapis.com/css?family=Kdam Thmor');
 
-body {
+.container {
     display: grid;
-    height: 100vh;
+    height: auto;
     grid-template: auto;
 }
 header {
