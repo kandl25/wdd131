@@ -2,13 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@500');
 
-/*body {
-    display: block;
-    gap: 50px, 20px;
-}*/
+body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+  }
 header {
-    background-color: #A5C882;
-    grid-row-gap: 50px;
+    background-color: #C2CAD0;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    grid-column: 1 / 4;
 }
 h1 {
     font-family: "Shadows Into Light Two", cursive;
@@ -18,8 +24,6 @@ h1 {
     text-align: center;
 }
 nav {
-    margin: 0 auto;
-    max-width: 800px;
     display: flex;
     text-align: center;
     justify-content: space-evenly;
@@ -34,18 +38,29 @@ nav a:hover {
 }
 main {
     display: grid;
-    grid-template-columns: 500px 250px;
+    grid-template-columns: 1fr 300px;
+    grid-row-gap: 5px;
     grid-column-gap: 50px;
-    max-width: 800px;
+    max-width: 100%;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .mecard {
     border: 2px solid #C2B9C2;
     border-radius: 10px;
     text-align: center;
+    margin: 5px;
 }
 .resourcecard {
     border: 2px solid #C2B9C2;
     border-radius: 10px;
     text-align: center;
+    margin: 5px;
 }
+footer {
+    background: #C2CAD0;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+  }
