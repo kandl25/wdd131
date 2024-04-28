@@ -1,0 +1,51 @@
+/* bb8588,c2cad0,c2b9c2,b39bc8,a5c882 */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@500');
+
+/*body {
+    display: block;
+    gap: 50px, 20px;
+}*/
+header {
+    background-color: #A5C882;
+    grid-row-gap: 50px;
+}
+h1 {
+    font-family: "Shadows Into Light Two", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #B39BC8;
+    text-align: center;
+}
+nav {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+nav a {
+    text-align: center;
+    padding: 1rem;
+}
+nav a:hover {
+    color: #B39BC8;
+    border-style: double;
+}
+main {
+    display: grid;
+    grid-template-columns: 500px 250px;
+    grid-column-gap: 50px;
+    max-width: 800px;
+    text-align: center;
+}
+.mecard {
+    border: 2px solid #C2B9C2;
+    border-radius: 10px;
+    text-align: center;
+}
+.resourcecard {
+    border: 2px solid #C2B9C2;
+    border-radius: 10px;
+    text-align: center;
+}
