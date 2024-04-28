@@ -18,8 +18,7 @@ header {
 }
 h1 {
     font-family: "Shadows Into Light Two", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-style: bold;
     color: #B39BC8;
     text-align: center;
 }
@@ -38,7 +37,8 @@ nav a:hover {
 }
 main {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
     grid-row-gap: 5px;
     grid-column-gap: 50px;
     max-width: 100%;
@@ -51,12 +51,25 @@ main {
     border-radius: 10px;
     text-align: center;
     margin: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+p {
+    text-align: left;
+    font-family: "Laila";
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-row: 2 / span 3;
+    grid-column: 1 / span 3;
 }
 .resourcecard {
     border: 2px solid #C2B9C2;
     border-radius: 10px;
     text-align: center;
-    margin: 5px;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
 }
 footer {
     background: #C2CAD0;
@@ -64,3 +77,18 @@ footer {
     text-align: center;
     grid-column: 1 / 4;
   }
+.couple {
+    height: 300px;
+    width: 400Px;
+    padding-left: 10px;
+   /* grid-row: 1 / span 3;
+    grid-column: 2 / span 4; */
+}
+.knives {
+    height: 300px;
+    width: 200px;
+    padding: 10px;
+    /* display: grid;
+    grid-row: 2 / span 4;
+    grid-column: 2 / span 4; */
+}
