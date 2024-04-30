@@ -95,8 +95,8 @@ img {
     border-radius: 20px;
 }
 .couple {
-    height: 400px;
-    width: 300Px;
+    height: 300px;
+    width: 400Px;
     padding: 10px;
     float: left;
    /* grid-row: 1 / span 3;
