@@ -5,12 +5,11 @@
 body {
     display: grid;
     height: 100vh;
-    width: 100%;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
   }
 header {
-    background-color: #C2CAD0;
+    border: 5px solid #BB8588;
+    border-radius: 5px;
     display: block;
     text-align: center;
     padding: 10px;
@@ -19,68 +18,87 @@ header {
 h1 {
     font-family: "Shadows Into Light Two", cursive;
     font-style: bold;
-    color: #B39BC8;
+    color: #A5C882;
     text-align: center;
+    text-decoration: underline #C2B9C2;
 }
-nav {
+.topnav {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-}
-nav a {
+    font-family: "Laila";
     text-align: center;
     padding: 1rem;
+}
+.links {
+    /*display: flex;
+    flex-direction: row;*/
+    font-family: "Laila";
+    text-align: center;
+    justify-content: space-evenly;
 }
 nav a:hover {
     color: #B39BC8;
     border-style: double;
 }
 main {
-    display: grid;
+   display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    grid-row-gap: 5px;
-    grid-column-gap: 50px;
-    max-width: 100%;
+   /* grid-row-gap: 5px;
+    grid-column-gap: 50px;*/
+    max-width: 2000px;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
 }
 .mecard {
-    border: 2px solid #C2B9C2;
+    border: 5px solid #C2B9C2;
     border-radius: 10px;
-    text-align: center;
     margin: 5px;
-    display: grid;
+    height: 800px;
+    padding: 10px;
+   /* display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto; */
 }
-p {
+.left {
+    text-align: right;
+    font-family: "Laila";
+    padding: 10px;
+   /* grid-row: 3 / span 3;
+    grid-column: 2 / span 3;*/
+} 
+.right {
     text-align: left;
     font-family: "Laila";
-    padding-left: 10px;
-    padding-right: 10px;
-    grid-row: 2 / span 3;
-    grid-column: 1 / span 3;
-}
+    padding: 10px;
+   /* grid-row: 2 / span 3;
+    grid-column: 2 / span 3;*/
+} 
 .resourcecard {
-    border: 2px solid #C2B9C2;
+    border: 5px solid #C2B9C2;
     border-radius: 10px;
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 50%;
+    height: 800px;
+    margin: 5px;
+    padding: 10px;
 }
 footer {
     background: #C2CAD0;
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 4;
+    color:#BB8588;
   }
+img {
+    border-radius: 20px;
+}
 .couple {
     height: 300px;
     width: 400Px;
-    padding-left: 10px;
+    padding: 10px;
+    float: left;
    /* grid-row: 1 / span 3;
     grid-column: 2 / span 4; */
 }
@@ -88,7 +106,18 @@ footer {
     height: 300px;
     width: 200px;
     padding: 10px;
+    float: right;
     /* display: grid;
     grid-row: 2 / span 4;
     grid-column: 2 / span 4; */
+}
+h2 {
+    font-family: "Shadows Into Light Two", cursive;
+    text-decoration: underline double #A5C882;
+    font-size: 2em;
+}
+.resources {
+    display: flex;
+    padding: 1rem;
+
 }
