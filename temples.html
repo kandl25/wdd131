@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Temples - Kaylee DeCamps</title>
+    <title>Temple Album - Kaylee DeCamps</title>
     <meta name="author" content="Kaylee DeCamps" />
     <meta name="description" content="WDD 131 - Temples - Kaylee DeCamps. 
     Church of Jesus Christ of Latter Day Saints Temples Today." />
@@ -11,10 +11,18 @@
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <script defer src="scripts/temples.js"></script>
+    <script defer scr="scripts/getdates"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>WDD 131 - Temples - Kaylee DeCamps</h1>
+        <h1>Temple Album</h1>
         <nav class="menu">
             <a href="add link">Home</a>
             <a href="add link">Old</a>
@@ -24,7 +32,58 @@
         </nav>
     </header>
     <main>
-        
+        <h2>Home</h2>
+        <div class="figures">
+            <figure class="temple1">
+                <img src="images/boise-temple.jpg" alt="Boise Temple">
+                <figcaption>Boise, Idaho Temple</figcaption>
+            </figure>
+            <figure class="temple2">
+                <img src="images/brigham-temple.jpg" alt="Brigham Temple">
+                <figcaption>Brigham City, Utah Temple</figcaption>
+            </figure>
+            <figure class="temple3">
+                <img src="images/houston-temple.jpg" alt="Houston Temple">
+                <figcaption>Houston, Texas Temple</figcaption>
+            </figure>
+            <figure class="temple4">
+                <img src="images/lasvegas-temple.jpg" alt="Las Vegas Temple">
+                <figcaption>Las Vegas, Nevada Temple</figcaption>
+            </figure>
+            <figure class="temple5">
+                <img src="images/meridian-idaho.jpg" alt="Meridian Temple">
+                <figcaption>Meridian, Idaho Temple</figcaption>
+            </figure>
+            <figure class="temple6">
+                <img src="images/nauvoo-temple.jpg" alt="Nauvoo Temple">
+                <figcaption>Nauvoo, Illinois Temple</figcaption>
+            </figure>
+            <figure class="temple7">
+                <img src="images/Oakland-Temple.jpg" alt="Oakland Temple">
+                <figcaption>Oakland, California Temple</figcaption>
+            </figure>
+            <figure class="temple8">
+                <img src="images/orlando-temple.jpg" alt="Orlando Temple">
+                <figcaption>Orland, Florida Temple</figcaption>
+            </figure>
+            <figure class="temple9">
+                <img src="images/portland-temple.jpg" alt="Portland Temple">
+                <figcaption>Portland, Oregon Temple</figcaption>
+            </figure>
+            <figure class="temple10">
+                <img src="images/puertorico-temple.jpeg" alt="San Juan Temple">
+                <figcaption>San Juan, Puerto Rico Temple</figcaption>
+            </figure>
+        </div>
     </main>
+    <footer>
+        <p class="copywright">&copy;
+            <span id="year"></span>
+            Kaylee DeCamps | Idaho USA
+        </p>
+        <p class="modified">
+            <span id="lastmodified"></span>
+        </p>
+    </footer>
 </body>
 </html>
