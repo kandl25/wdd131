@@ -9,10 +9,13 @@ lastmodified.innerHTML = `Last Modification: ${lastMod}`;
 
 /* Hamburger */
 
-const mainnav = document.querySelector('.menu')
-const hambutton = document.querySelector('#navigation');
+/*const menu = document.querySelector('.menu')
+const navigationBtn = document.getElementById('navigation');
 
-hambutton.addEventListener('click', () => {
-	mainnav.classList.toggle('show');
-	hambutton.classList.toggle('show');
-});
+navigationBtn.addEventListener('click', () => {
+	menu.classList.toggle('show');
+	navigationBtn.classList.toggle('show');
+}); */
+navigationBtn.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });

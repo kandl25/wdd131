@@ -14,15 +14,16 @@ header {
 /* hamburger */
 #navigation {
     display: block;
-    position: absolute;
+    justify-content: end;
     padding: .5rem .75rem;
 }
 #navigation::before {
     content: "=";
 }
-#navigation.show {
+#navigation.show::before {
     content: 'X';
 }
+/* heading and nav */
 h1 {
     font-size: 2rem;
     text-decoration: underline wavy #DDA15E;
@@ -64,6 +65,9 @@ h2 {
 .figures img {
     max-width: 300px;
     height: auto;
+}
+.figures img:hover {
+    box-shadow: 10px 10px 20px #BC6C25;
 }
 footer {
     background-color: #606C38;
