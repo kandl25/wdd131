@@ -20,4 +20,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         padding: 10px;
     }
+	#navigation {
+		display: none;
+	}
 }

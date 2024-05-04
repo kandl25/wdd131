@@ -9,3 +9,10 @@ lastmodified.innerHTML = `Last Modification: ${lastMod}`;
 
 /* Hamburger */
 
+const mainnav = document.querySelector('.menu')
+const hambutton = document.querySelector('#navigation');
+
+hambutton.addEventListener('click', () => {
+	mainnav.classList.toggle('show');
+	hambutton.classList.toggle('show');
+});

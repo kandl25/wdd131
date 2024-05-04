@@ -11,6 +11,18 @@ header {
 /*header, main {
     margin: 0 auto;
 }*/
+/* hamburger */
+#navigation {
+    display: block;
+    position: absolute;
+    padding: .5rem .75rem;
+}
+#navigation::before {
+    content: "=";
+}
+#navigation.show {
+    content: 'X';
+}
 h1 {
     font-size: 2rem;
     text-decoration: underline wavy #DDA15E;
