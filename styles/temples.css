@@ -1,10 +1,7 @@
 /* mobile ********/
-* {
-    margin: 0;
-}
+
 header {
     display: grid;
-    grid-gap: 1rem;
     padding: 20px;
     background-color: #606C38;
     color: #FEFAE0;
@@ -73,6 +70,9 @@ h2 {
 .figures img {
     max-width: 300px;
     height: auto;
+}
+.figcaption{
+    padding: 1rem;
 }
 .figures img:hover {
     box-shadow: 10px 10px 20px #BC6C25;
