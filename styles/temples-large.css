@@ -1,5 +1,5 @@
 /* Navigation menu large view*/
-@media (min-width: 740px) {
+@media screen and (min-width: 740px) {
 	header {
 		display: flex;
 		align-items: center;
@@ -20,7 +20,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         padding: 10px;
     }
-	#navigation {
+	#menu {
 		display: none;
 	}
 }

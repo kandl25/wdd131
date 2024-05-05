@@ -9,13 +9,22 @@ lastmodified.innerHTML = `Last Modification: ${lastMod}`;
 
 /* Hamburger */
 
-/*const menu = document.querySelector('.menu')
+ /*const menu = document.querySelector('.menu')
 const navigationBtn = document.getElementById('navigation');
 
-navigationBtn.addEventListener('click', () => {
-	menu.classList.toggle('show');
-	navigationBtn.classList.toggle('show');
-}); */
+
 navigationBtn.addEventListener('click', () => {
     menu.classList.toggle('show');
   });
+ navigationBtn.addEventListener('click', () => {
+	menu.classList.toggle('show');
+	navigationBtn.classList.toggle('show');
+}); */
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation')
+
+hamButton.addEventListener('click', () => {
+    navigation.classList.toggle('show')
+    hamButton.classList.toggle('show')
+})

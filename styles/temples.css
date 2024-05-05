@@ -1,4 +1,7 @@
 /* mobile ********/
+* {
+    margin: 0;
+}
 header {
     display: grid;
     grid-gap: 1rem;
@@ -8,19 +11,20 @@ header {
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
 }
-/*header, main {
-    margin: 0 auto;
-}*/
 /* hamburger */
-#navigation {
+#menu {
     display: block;
-    justify-content: end;
+    position: absolute;
     padding: .5rem .75rem;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    color: #DDA15E;
 }
-#navigation::before {
-    content: "=";
+#menu::before {
+    content: '☰'
 }
-#navigation.show::before {
+#menu.show::before {
     content: 'X';
 }
 /* heading and nav */
@@ -42,6 +46,10 @@ nav a {
 nav a:hover {
     color:#DDA15E;
     border: dotted;
+}
+.show a {
+    display: block;
+    z-index: 1;
 }
 /* images ******/
 main {
