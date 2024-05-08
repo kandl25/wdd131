@@ -24,6 +24,16 @@ header {
 #menu.show::before {
     content: 'X';
 }
+.show navigation {
+    display: block;
+    z-index: 1;
+}
+.open nav {
+    display: block;
+}
+.active::before {
+    content: nav a;
+}
 /* heading and nav */
 h1 {
     font-size: 2rem;
@@ -44,10 +54,7 @@ nav a:hover {
     color:#DDA15E;
     border: dotted;
 }
-.show a {
-    display: block;
-    z-index: 1;
-}
+
 /* images ******/
 main {
     background-color: #FEFAE0;
