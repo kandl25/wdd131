@@ -57,6 +57,9 @@ main {
 #icon {
     margin-top: 10px;
 }
+table {
+    text-align: center;
+}
 tr {
     /*font-family: ;*/
     font-size: 1em;
