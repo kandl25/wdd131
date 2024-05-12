@@ -4,29 +4,29 @@ font-weight: 400;*/
 /****** Mobile View *******/
 :root {
     --font-heading: "Poetsen One", sans-serif;
-    --font-page: "Noto Serif", serif;
+    --font-page: "Arial", sans-serif;
 }
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    box-sizing: border-box;
 }
 header {
     display: grid;
     text-align: center;
-    background-image: url("prflag.webp");
+    background-image: url("images/prflag.webp");
 }
 h1 {
-    font-family: "Poetsen One", sans-serif;
+    font-family: var(--font-heading);
     font-weight: 400;
     font-style: normal;
 }
 h2 {
-    font-family: "Poetsen One", sans-serif;
+    font-family: var(--font-heading);
     font-weight: 400;
     font-size: 2em;
     text-align: center;
-    border-top: 5px solid;
-    border-bottom: 5px solid;
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
 }
 .hero {
     display: block;
@@ -34,11 +34,9 @@ h2 {
     margin-right: auto;
     width: 100%;
 }
-
 main {
-    border-bottom: 5px solid;
+    border-bottom: 5px solid red;
 }
-
 .data,
 .weather {
     display: grid;
@@ -55,7 +53,6 @@ main {
     margin-left: auto;
     margin-right: auto;
     width: 50px;
-    padding-top: 1rem;
 }
 
 tr {
@@ -68,6 +65,7 @@ th {
     text-align: right;
     padding-right: 0.5rem;
     font-weight: 600;
+    font-style: bold;
 }
 
 td {
@@ -85,43 +83,29 @@ footer {
 }
 
 /****** Large View *******/
-/* @media screen and (min-width: 740px) {
-	header {
-		display: flex;
-		align-items: center;
-	    justify-content: space-between;
-	}
-	nav {
-		justify-content: flex-end;
-		flex-direction: row;
-	}
-	nav a {
-		flex: 1 1 100%;
-	}
-    
-}*/
-@media (min-width: 768px) {
+@media (min-width: 740px) {
     body {
         position: relative;
     }
     table {
         padding: 1rem;
     }
-    .data {
+    .left {
         position: absolute;
         top: 170px;
         left: 20px;
         width: 350px;
+        background-color: rgb(255, 255, 255, 0.5);
     }
     h2 {
         background-color: red;
     }
-    .weather {
+    .right {
         position: absolute;
         right: 20px;
         bottom: 100px;
         width: 350px;
-        display: grid;
+        background-color: rgb(255, 255, 255, 0.5);
     }
     .weather h2::after {
         text-shadow: 0 0 3px white;
