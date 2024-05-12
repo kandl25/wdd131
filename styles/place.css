@@ -7,23 +7,27 @@ font-weight: 400;*/
     --font-page: "Arial", sans-serif;
 }
 * {
-    margin: 10px;
+    margin: 1px;
     box-sizing: border-box;
 }
 header {
     display: grid;
     text-align: center;
-    background-image: url("images/prflag.webp");
+    padding: 10px;
+    background-color: blue;
+    border-bottom: 5px solid red;
 }
 h1 {
     font-family: var(--font-heading);
     font-weight: 400;
     font-style: normal;
+    color:white;
 }
 h2 {
     font-family: var(--font-heading);
     font-weight: 400;
     font-size: 2em;
+    color: white;
     text-align: center;
     border-top: 5px solid blue;
     border-bottom: 5px solid blue;
@@ -32,7 +36,7 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: auto;
 }
 main {
     border-bottom: 5px solid red;
@@ -41,39 +45,32 @@ main {
 .weather {
     display: grid;
     padding: 1rem 1rem 2rem 1rem;
-    font-size: 1em;
     display: block;
     margin-left: auto;
     margin-right: auto;
     table-layout: fixed;
 }
-
-#icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50px;
+.data-table, .weather-table {
+    font-family: var(--font-page);
 }
-
+#icon {
+    margin-top: 10px;
+}
 tr {
     /*font-family: ;*/
     font-size: 1em;
     width: 175px;
 }
-
 th {
     text-align: right;
     padding-right: 0.5rem;
     font-weight: 600;
-    font-style: bold;
 }
-
 td {
     text-align: left;
     padding-left: 0.5rem;
     font-weight: 400;
 }
-
 footer {
     background-color: blue;
     color: white;
@@ -85,7 +82,7 @@ footer {
 /****** Large View *******/
 @media (min-width: 740px) {
     body {
-        position: relative;
+        position: absolute;
     }
     table {
         padding: 1rem;
