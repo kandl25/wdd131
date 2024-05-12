@@ -27,6 +27,7 @@ h2 {
     font-family: var(--font-heading);
     font-weight: 400;
     font-size: 2em;
+    background-color: red;
     color: white;
     text-align: center;
     border-top: 5px solid blue;
@@ -105,6 +106,6 @@ footer {
         background-color: rgb(255, 255, 255, 0.5);
     }
     .weather h2::after {
-        text-shadow: 0 0 3px white;
+        text-shadow: 0 0 3px red;
     }
 }
