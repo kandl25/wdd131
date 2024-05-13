@@ -32,7 +32,7 @@ header {
     display: block;
 }
 .active::before {
-    content: nav a;
+    content: nav;
 }
 /* heading and nav */
 h1 {
