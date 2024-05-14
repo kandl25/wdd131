@@ -39,6 +39,11 @@ h2 {
     margin-right: auto;
     width: auto;
 }
+.hero img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
 main {
     border-bottom: 5px solid red;
 }
