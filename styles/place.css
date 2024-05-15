@@ -113,7 +113,7 @@ footer {
         width: 350px;
         background-color: rgb(255, 255, 255, 0.5);
     }
-    .weather h2::after {
-        content: none;
+    #icon {
+        display: none;
     }
 }
