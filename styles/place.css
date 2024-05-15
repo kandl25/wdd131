@@ -114,6 +114,6 @@ footer {
         background-color: rgb(255, 255, 255, 0.5);
     }
     .weather h2::after {
-        text-shadow: 0 0 3px red;
+        content: none;
     }
 }
