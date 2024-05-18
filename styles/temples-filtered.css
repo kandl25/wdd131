@@ -90,3 +90,33 @@ footer {
     text-align: center;
     color:#FEFAE0;
 }
+/* Navigation menu large view*/
+@media screen and (min-width: 740px) {
+	header {
+		display: flex;
+		align-items: center;
+	    justify-content: space-between;
+	}
+	nav {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+    /*Figure images Large view*/
+    .figures {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 10px;
+    }
+	#menu {
+		display: none;
+	}
+}
+@media screen and (min-width: 725px) and (max-width: 1050px) {
+    .temple-display {
+        grid-template-columns: 1fr 1fr;   
+    }
+}
