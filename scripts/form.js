@@ -34,35 +34,26 @@ const products = [
       averagerating: 5.0
     }
   ];
-  
-const productNames = products.map((product) => product.name);
-const selectMenu = document.querySelector("#product-name");
-const reviewsDisplay = document.querySelector(".review-number")
-let numReviews = GetReviews()
 
-if (document.title === "Review Page") {
-  addEventListener('DOMContentLoaded', function() {
-    numReviews++
-    DisplayReviews(numReviews);
-    SetReviews();
-})
+  function loadProducts(products) {
+    
+    let select = document.querySelector('#product-name');
+    select.innerHTML = "";
+
+    let opt = document.createElement("option");
+    opt.text = "Choose a Product...";
+    opt.value = "";
+    opt.disabled = true;
+    opt.selected = true;
+
+    select.appendChild(opt);
+
+    for (let i = 0; i < products.length; i++) {
+        opt = document.createElement("option");
+        opt.text = products[i].name;
+        opt.value = products[i].id;
+        select.appendChild(opt);
+    }
 }
 
-function GetReviews() {
-  return JSON.parse(this.localStorage.getItem("numReviews"))
-}
-
-function DisplayReviews(reviews) {
-  reviewsDisplay.innerHTML = reviews;
-}
-
-function SetReviews() {
-  this.localStorage.setItem("numReviews", JSON.stringify(numReviews))
-}
-
-function mapNames(array) {
-    array.forEach((name) => {
-        const nameOption = selectMenu.innerHTML += `<option value="${name}">${name}</option>`
-    })
-}
-mapNames(productNames);
+loadProducts(products);
