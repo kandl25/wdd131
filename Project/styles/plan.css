@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 :root {
     --header: #2A4551;
@@ -9,7 +10,6 @@
 }
 body {
     background-color: var(--gold);
-    align-items: center;
 }
 
 header {
