@@ -1,9 +1,7 @@
-/****media view****/
 :root {
     --background: #BFD7B5;
     --text: #413C58;
 }
-/***** top of page *****/
 header {
     display: grid;
     padding: 20px;
@@ -43,37 +41,14 @@ header {
     display: block;
 }  
 .dropdown-content a:hover {background-color: #F2DDA4}
-  
 .dropdown:hover .dropdown-content {
     display: block;
 }  
 .dropdown:hover .dropbtn {
     background-color: #F2DDA4;
 }
-
-/******* Mid Page *******/
-main {
-    padding: 50px 5px;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-    background-color: #F2DDA4;
-    z-index: -1;
-}
-.card-center, .card-left, .card-right {
-    border: #BFD7B5 groove 5px;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    text-decoration: none;
-    background-color: rgb(163, 196, 188, 0.3);
-    color: #413C58;
-}
 a:hover{
     box-shadow:5px 5px 10px #F3A6CF;
-    background-color: #F2DDA4;
 }
 h2 {
     font-family: "Oswald", sans-serif;
@@ -85,28 +60,13 @@ h3 {
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 footer {
     background-color: var(--background);
     text-align: center;
     padding: 20px;
     color:#413C58;
 }
-/****** Large View *******/
+
+/***** Large View ******/
 @media (min-width: 740px) {
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-around;
-        
-    }
-    .card-left {
-        text-align: left;
-    }
-    .card-center {
-        text-align: center;
-    }
-    .card-right {
-        text-align: right;
-    }
 }

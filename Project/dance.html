@@ -7,8 +7,8 @@
     <meta name="author" content="Kaylee DeCamps">
     <meta name="description" content="WDD 131 Week 6 Project">
 
-    <link rel="stylesheet" href="project/styles/dance.css">
-    <script src="#" defer></script>
+    <link rel="stylesheet" href="styles/dance.css">
+    <script src="scripts/dance.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,21 +21,17 @@
         <div class="dropdown">
             <button class="dropbtn">☰</button>
             <div class="dropdown-content">
-            <a href="project/dance.html">Home</a>
-            <a href="project/ballet.html">Ballet</a>
-            <a href="#">Jazz</a>
-            <a href="#">Hip Hop</a>
-            <a href="#">Resources</a>
+            <a href="dance.html">Home</a>
+            <a href="ballet.html">Ballet</a>
+            <a href="ballroom.html">Ballroom</a>
+            <a href="clogging.html">Hip-Hop</a>
+            <a href="resources.html">Resources</a>
             </div>
           </div>
     </header>
-    <main>
-        <a href="project/ballet.html" class="card-left">
-            <picture class="hero">
-                <source srcset="#" loading="lazy" media="(max-width: 740px)">
-                <source srcset="#" loading="lazy" media="(max-width: 800px)">
-                <img src="#" alt="Ballet Dancer" loading="lazy">
-            </picture>
+    <main class="dancers" style="background-image: url(images/dancers-bckgr.webp);" loading="lazy" media="(max-width 740px)">
+        <a href="ballet.html" class="card-left">
+            <img>
             <h2>Ballet</h2>
             <h3>History</h3>
             <p>Ballet was established in the Italian Renaissance in the 15th century. Ballet eventually moved to France and became adjacent to Operas.
@@ -47,13 +43,15 @@
                 <br><br> <i>Click for more</i>
             </p>
         </a>
-        <a href="#" class="card-center">
-            <h2>Jazz</h2>
+        <a href="ballroom.html" class="card-center">
+            <h2>Ballroom</h2>
+            <h3>History</h3>
             <p>Info Here</p>
             <img>
         </a>
-        <a href="#" class="card-right">
-            <h2>Hip Hop</h2>
+        <a href="clogging.html" class="card-right">
+            <h2>Hip-Hop</h2>
+            <h3>History</h3>
             <p>Info Here</p>
             <img>
         </a>
