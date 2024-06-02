@@ -18,7 +18,7 @@ header {
     padding: 10px;
     border: none;
     cursor: pointer;
-    font-weight: 900;
+    font-size: x-large;
 } 
 .dropdown {
     display: block;
@@ -50,16 +50,29 @@ header {
 a:hover{
     box-shadow:5px 5px 10px #F3A6CF;
 }
+/***** Image *****/
+.hero {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+main {
+    color: var(--text);
+}
 h2 {
     font-family: "Oswald", sans-serif;
     font-size: normal;
 }
-h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 footer {
     background-color: var(--background);
     text-align: center;

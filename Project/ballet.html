@@ -7,7 +7,7 @@
     <meta name="author" content="Kaylee DeCamps">
     <meta name="description" content="WDD 131 Week 6 Project">
 
-    <link rel="stylesheet" href="styles/ballet.css">
+    <link rel="stylesheet" href="styles/pages.css">
     <script src="scripts/dance.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <h2>Let's Ballet!</h2>
+        <h1>Let's Ballet!</h1>
         <div class="dropdown">
             <button class="dropbtn">☰</button>
             <div class="dropdown-content">
@@ -31,11 +31,11 @@
     </header>
     <main>
         <picture class="hero">
-            <source srcset="images/puerto-rico.webp" media="(max-width: 740px)">
-            <source srcset="images/pr-beach.webp" media="(max-width: 800px)">
-            <img src="images/pr-beach.webp" alt="Puerto Rico Building">
+            <source srcset="images/ballet-barre.webp" media="(max-width: 740px)" loading="lazy">
+            <source srcset="images/ballet.webp" media="(max-width: 800px)" loading="lazy">
+            <img src="images/ballet.webp" alt="Puerto Rico Building" loading="lazy">
         </picture>
-        <h2>History</h2>
+        <h2 class="history">History</h2>
             <p>Ballet was established in the Italian Renaissance in the 15th century. Ballet eventually moved to France and became adjacent to Operas.
                 Many of the performances were done by men until 1681 when the first principal female dancer came along. <br>
                 Ballet then moved again to Russia in the 19th century; where many well known ballet performances, many know today, came from. These performances are "Swan Lake",
@@ -43,8 +43,9 @@
                 With this show of ballet, Europe and North America joined the trend of having their own ballet companies. Many of these companies still operate today and have been
                 around since the mid 1900's.
             </p>
-        <h2>Benifits</h2>
-        <p>Ballet can be a grueling and painful sport but can be very benefitial to the body. Ballet can strengthen the body, help mental health, and social asspects. <br>
+        <h2 class="benefit">Benefits</h2>
+            <p>Ballet can be a grueling and painful sport but can be very benefitial to the body. Ballet can strengthen the body, help mental health, and social asspects. <br>
+            
             </p>
     </main>
     <footer>

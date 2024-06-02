@@ -1,0 +1,73 @@
+:root {
+    --background: #BFD7B5;
+    --text: #413C58;
+}
+header {
+    display: grid;
+    padding: 20px;
+    background-color: var(--background);
+    text-align: center;
+    color: #413C58;
+    text-decoration: underline double 2px #F2DDA4;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-size: large;
+}
+.dropbtn {
+    background-color: transparent;
+    color: var(--text);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: x-large;
+} 
+.dropdown {
+    display: block;
+    position: absolute;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    z-index: 3;
+}  
+.dropdown-content a {
+    color: #413C58;
+    background-color: #A3C4BC;
+    border: #BFD7B5 groove 5px;
+    border-radius: 5px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}  
+.dropdown-content a:hover {background-color: #F2DDA4}
+.dropdown:hover .dropdown-content {
+    display: block;
+}  
+.dropdown:hover .dropbtn {
+    background-color: #F2DDA4;
+}
+a:hover{
+    box-shadow:5px 5px 10px #F3A6CF;
+}
+main {
+    color: var(--text);
+}
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: normal;
+}
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+footer {
+    background-color: var(--background);
+    text-align: center;
+    padding: 20px;
+    color:#413C58;
+}
+
+/***** Large View ******/
+@media (min-width: 740px) {
+}
