@@ -49,6 +49,7 @@ header {
 }
 a:hover{
     box-shadow:5px 5px 10px #F3A6CF;
+    background-color: #F2DDA4;
 }
 /***** Image *****/
 .hero {
@@ -64,15 +65,22 @@ a:hover{
 }
 main {
     color: var(--text);
+    background-color: #A3C4BC;
+    padding: 50px;
 }
 h2 {
     font-family: "Oswald", sans-serif;
     font-size: normal;
+    text-align: center;
 }
 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 footer {
     background-color: var(--background);
     text-align: center;
